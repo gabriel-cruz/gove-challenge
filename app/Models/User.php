@@ -11,6 +11,6 @@ class User extends Model
     protected $fillable = ['name', 'dt_birth'];
 
     public function addresses(){
-        $this->hasMany(Adress::class);
+        return $this->hasMany(Address::class, 'user', 'id');
     }
 }
