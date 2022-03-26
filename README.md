@@ -8,8 +8,12 @@ Necessário ter instalado o PHP 7.3 ou maior.
 
 Necessário instalar o framework Laravel. Faça o download [aqui](https://laravel.com/docs/4.2).
 
-Para rodar o servidor Laravel, execute o comando ``php artisan serve`` na pasta do projeto.
+1. Para configurar as migrations do projeto, execute o comando ``php artisan migrate``;
+2. Para popular o banco de dados por meio das seeds, execute o comando ``php artisan db:seed``;
+3. Para rodar o servidor Laravel, execute o comando ``php artisan serve`` na pasta do projeto.
 
 Para visualizar a saída da API, é recomendado utilizar o [Postman](https://www.postman.com/) junto com o [Postman Agent](https://www.postman.com/downloads/postman-agent/) caso esteja utilizando no localhost. Ou utilize um *Client API* de sua preferência.
+
+
 
 [Documentação da API](https://documenter.getpostman.com/view/19018930/UVyn1dbe)
