@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('user/create', 'App\Http\Controllers\ApiController@createUser');
 Route::post('user/createaddress/{user}', 'App\Http\Controllers\ApiController@createAddress');
 Route::get('user', 'App\Http\Controllers\ApiController@getUsers');
-Route::get('user/get/{user}', 'App\Http\Controllers\ApiController@getUserbyId');
+Route::get('user/{user}', 'App\Http\Controllers\ApiController@getUserbyId');
 Route::put('user/edit/{id}', 'App\Http\Controllers\ApiController@updateUser');
 Route::put('user/editaddress/{user}/{id}', 'App\Http\Controllers\ApiController@updateAddress');
 Route::delete('user/delete/{id}', 'App\Http\Controllers\ApiController@deleteUser');
